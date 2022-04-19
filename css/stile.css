@@ -94,6 +94,15 @@ nav {
   gap: 1em;
 }
 
+/*ESTE ES EL ICONO DEL MENU HAMBURGUEZA*/
+.menu {
+  margin-right: 30px;
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
 /* HERO CENTRADO CON GRID */
 .hero {
   background: url("https://images.unsplash.com/photo-1525982479023-9093afb36871?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80") no-repeat center/cover;
@@ -381,5 +390,19 @@ fieldset {
   -webkit-transition: background 0.3s ease-in-out;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+}
+
+/*ACA JUGAMOS CON EL RESPONSIVE PARA DEJAR TODO LISTO LOS TAMAÑOS RESPONSIVOS PARA CADA DISPOSITIVO*/
+@media screen and (max-width: 800px) {
+  header {
+    padding: 1em 1em;
+  }
+}
+
+@media screen and (max-width: 952px) {
+  header {
+    padding: 1em 1em;
+    top: 1;
+  }
 }
 /*# sourceMappingURL=stile.css.map */

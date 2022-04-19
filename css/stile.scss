@@ -70,11 +70,13 @@ header {
 	/* SEPARAR LOGO Y MENU */
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	//align-items: baseline;
 	/* ESTILO */
 	padding: 1.5em 2em;
 	box-shadow: 0 0 20px 0 black;
 }
+
+
 
 /* NAV CON FLEX */
 nav {
@@ -82,6 +84,12 @@ nav {
 	/* EN VEZ DE DAR PADDING A LOS BOTONES, AL SER SOLO PALABRAS USAMOS "GAP" QUE AGREGA ESPACIO ENTRE LOS ITEMS, DE ESTA FORMA NO HAY QUE DARLE UN ANCHO AL NAV/UL NI PADDING/MARGIN A LOS ENLACES */
 	gap: 1em;
 }
+
+/*ESTE ES EL ICONO DEL MENU HAMBURGUEZA*/
+
+
+  
+
 
 /* HERO CENTRADO CON GRID */
 .hero {
@@ -242,19 +250,7 @@ footer .redes ul {
 	gap: 2em;
 }
 
-@media only screen and (max-width: 500px) {
-	footer {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-	}
 
-		footer .redes ul {
-		display: flex;
-		justify-content: center;
-	}
-
-}
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
@@ -322,3 +318,31 @@ fieldset {
 	transition:background-color 0.3s ease-in-out;
 }
 
+/*ACA JUGAMOS CON EL RESPONSIVE PARA DEJAR TODO LISTO LOS TAMAÑOS RESPONSIVOS PARA CADA DISPOSITIVO*/
+
+@media only screen and (max-width: 500px) {
+	footer {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+
+		footer .redes ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	header {
+		
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+
+		header .nava a {
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+
+}
